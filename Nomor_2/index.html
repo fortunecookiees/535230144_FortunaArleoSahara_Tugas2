@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <div class="input-box">
+            <label for="bil1">Bilangan 1</label>
+            <input type="number" id="bil1" placeholder="Masukkan bilangan pertama">
+        </div>
+        <div class="input-box">
+            <label for="bil2">Bilangan 2</label>
+            <input type="number" id="bil2" placeholder="Masukkan bilangan kedua">
+        </div>
+        <div class="input-box">
+            <label for="hasil">Hasil</label>
+            <input type="text" id="hasil" readonly placeholder="Hasil operasi">
+        </div>
+        <div class="buttons">
+            <button onclick="count('+')">+</button>
+            <button onclick="count('-')">-</button>
+            <button onclick="count('*')">×</button>
+            <button onclick="count('/')">÷</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

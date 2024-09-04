@@ -1,0 +1,123 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-cartoon-satellite-ruler-calculator-linear-education-background-picture-image_1458755.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; 
+}
+
+.calculator {
+    background-color: #fffff5;
+    padding: 75px;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(251, 214, 48, 0.626);
+    width: 500%;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculator:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(191, 47, 47, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #f07509;
+    font-size: 2.5rem; 
+    margin-bottom: 50px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    size: 100px;
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #f9c842;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #c57d26;
+}
+
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 22%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 24%;
+        font-size: 14px;
+    }
+}
